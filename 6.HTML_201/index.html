@@ -55,6 +55,86 @@
       </tbody>
     </table>
 
+    <h3>Format Code</h3>
+    <pre>
+       This is preformatted text wrapped in a <i>&lt;pre&gt;</i> tag. 
+       Whitespace matters inside <i>&lt;pre&gt;</i> tags, and they are used for writing
+       code in HTML, to make sure code is readable.
+
+       <i>&lt;pre&gt;</i> tags can also be used for rudimentary formatting. But notice
+       that all text inside the tag will be displayed in a monospace font by
+       your browser.
+
+       You can use other tags (e.g. <i>&lt;i&gt;</i>, <i>&lt;b&gt;</i>, etc.) to further format the text inside.
+    </pre>
+
+    <p> You can also use the <i>&lt;code&gt;</i> tag to put code in your HTML:
+    <pre><code>
+&copy;2024 JAF
+#
+# This is code wrapped in *both* <i>&lt;pre&gt;</i> and <i>&lt;code&gt;</i> tags.
+# The <i>&lt;code&gt;</i> tag is for semantics, and the <i>&lt;pre&gt;</i> maintains the formatting for
+# readability.
+#
+# NOTE: Tag brackets <i>&lt;</i> and <i>&gt;</i> inside <i>&lt;pre&gt;</i> and <i>&lt;code&gt;</i> tags must be replaced with their
+# entities <i>&amp;lt</i> and <i>&amp;gt</i> respectively.
+#
+# See here for a list of useful HTML entities:
+# https://www.w3schools.com/html/html_entities.asp
+#
+__set_theme ()
+{
+	# XTerm Escape Sequences:
+	# https://invisible-island.net/xterm/ctlseqs/ctlseqs.html
+
+	# VGA theme copied from gnome-terminal
+	local -a VGA=(
+		'#000000'
+		'#AA0000'
+		'#00AA00'
+		'#AA5500'
+		'#0000AA'
+		'#AA00AA'
+		'#00AAAA'
+		'#AAAAAA'
+		'#555555'
+		'#FF5555'
+		'#55FF55'
+		'#FFFF55'
+		'#5555FF'
+		'#FF55FF'
+		'#55FFFF'
+		'#FFFFFF'
+	)
+
+	local i=0
+	local color
+	for color in "${VGA[@]}"
+	do
+		# Define 16-color palette. Accepts `#??????` or `rgb:/??/??/??`.
+		printf '\033]4;%d;%s\007' "$((i++))" "$color"
+	done
+
+	local fg='#ffffff'
+	local bg='#000000'
+
+	# Set background
+	printf '\033]10;%s\007' "$bg"
+	# Set foreground
+	printf '\033]11;%s\007' "$fg"
+
+	# Set cursor type (1=blinking block)
+	printf '\033[%d q' 1
+	# Set cursor color
+	#printf '\033]12;%s\007' '#00ff00'
+
+	# Set highlight background
+	printf '\033]19;%s\007' "$fg"
+	# Set highlight foreground
+	printf '\033]17;%s\007' "$bg"
+}
+    </code></pre>
+
     <p>
       <span style="text-decoration: underline;">This text is underlined using the <i>&lt;span&gt;</i> tag with a <i>style="text-decoration: underline"</i> attribute</span>. This is the preferred way to underline text in html.
     </p>
