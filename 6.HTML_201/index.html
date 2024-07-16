@@ -11,6 +11,16 @@
       table * {
         border: 1px solid black;
       }
+      /* This is how we select elements with the 'class="cell33"' attribute */
+      .cell33 {
+        background-color: pink;
+      }
+      /* This is an *id* selector. Make sure every id is *unique*! */
+      #cell11 {
+        font-weight: bold;
+        text-align: center;
+        text-transform: uppercase;
+      }
     </style>
   </head>
   <body>
@@ -25,6 +35,10 @@
     <table border="5", width="100%">
       <tbody> <!-- this tag is not strictly necessary -->
         <tr> <!-- table row -->
+          <!-- table header -->
+          <th width="100%" colspan=3>This is the table header</th>
+        </tr>
+        <tr id="cell11">
           <td colspan=3>Cell 1.1 (spans 3 columns)</td> <!-- table data -->
         </tr>
         <tr>
@@ -33,8 +47,10 @@
           <td colspan=2>Cell 2.2 (spans 2 columns)</td>
         </tr>
         <tr>
-          <td>Cell 3.2</td>
-          <td>Cell 3.3</td>
+          <!-- This is *inline* CSS, which has the highest *specificity* of any CSS, but it is *bad practice* -->
+          <td style="padding: 1em; color: white; background-color: black">Cell 3.2</td>
+          <!-- The *class* attribute allows us to select this element in CSS -->
+          <td class="cell33">Cell 3.3</td>
         </tr>
       </tbody>
     </table>
