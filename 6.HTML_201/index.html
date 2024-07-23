@@ -258,6 +258,40 @@ __set_theme ()
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
     </p>
+    <div id="bottom"><a href="#top">Back to top</a></div>
+
+    <h3>Forms</h3>
+    <p>Submit this form and see where your browser navigates to</p>
+    <!-- Submitting the form with 'action="GET"' sends the form data in the query string of the target URL. This is **not** a secure way to send information! -->
+    <form method="GET" action="somepage.html">
+      <p>
+        See <a href="https://html.spec.whatwg.org/dev/forms.html">the HTML standard</a> for info on writing forms.
+      <p>
+      <p>
+        <label>Email</label>
+        <input name="email" type="email">
+      </p>
+      <p>
+        <label>Password</label>
+        <input required name="password" type="password">
+      </p>
+      <p>
+        <label>Are you human?</label>
+        <input type="checkbox">
+      </p>
+      <p>
+        <label>What emails would you like to receive?</label>
+        <select name="selection">
+          <option value="spam">Spam</option>
+          <option value="marketing" selected>Marketing</option>
+          <option value="advertising">Advertising</option>
+          <option value="death_threats" disabled>Death threats</option>
+        </select>
+      <p>
+        <textarea cols="80" rows="24" placeholder="This is a placeholder. Don't leave whitespace inside your textarea!"></textarea>
+      </p>
+      <button type="submit">Submit</button>
+    </form>
+
   </body>
-  <div id="bottom"><a href="#top">Back to top</a></div>
 </html>
