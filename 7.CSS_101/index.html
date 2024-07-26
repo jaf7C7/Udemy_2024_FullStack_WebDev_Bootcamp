@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        /* This is *internal* CSS i.e. using `<style>` tags */
+        h1 {  /* *element* selector */
+            color: green;
+        }
+        h1, p {  /* multiple selectors separated by commas */
+            background: pink;
+        }
+        .moon {  /* *class* selector */
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        .uppercase {
+            text-transform: uppercase;
+        }
+        /* The *id* selector is the most *specific* selector, as each ID should
+         * be unique. CSS does not require IDs to be unique, but JavaScript
+         * does (if you want `getElementById` to work properly).
+         *
+         * In CSS the more specific a selector is, the higher precedence its
+         * styles have. The ID selector is the most specific selector and so
+         * overrules all others.
+         */
+        #lowercase {
+            text-transform: lowercase;
+        }
+        /* Select only p tags directly inside (children of) article tags */
+        article > p {
+            background: lightgray;
+        }
+        /* Select only p tags directly preceded by (siblings of) other p tags */
+        p + p {
+            background: lightblue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <!-- Inline CSS (using `style` attribute) overrides everything else -->
+        <h1 style="color: red;">Hello, sun!</h1>
+        <h1 class="moon uppercase">Hello, moon!</h1>  <!-- Note multiple classes -->
+        <p class="uppercase" id="lowercase">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, et.</p>
+        <section style="border: 1px dashed blue;">
+            This is a section.
+            <article style="border: 1px dashed green;">
+                This is an article inside the section.
+                <p>This is a paragraph inside the article inside the section.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam velit dicta laudantium explicabo suscipit iusto maiores totam recusandae, debitis nesciunt.</p>
+            </article>
+        </section>
+    </header>
+    <main>
+    </main>
+</body>
+</html>
+
