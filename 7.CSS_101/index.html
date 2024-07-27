@@ -39,6 +39,31 @@
         p + p {
             background: lightblue;
         }
+        .bg-image {
+            height: 500px;
+            color: lightyellow;
+            padding-top: 20%;
+            font-size: 3em;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            /* Use linear-gradients to darken background image to ensure text is
+            readable. */
+            background-image:
+                linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url("https://images.unsplash.com/photo-1691157915037-68576ba139b1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+            background-size: cover; /* Try playing with this setting in devtools */
+        }
+        .display-test {
+            /* Try changing the 'display' property from 'inline-block' to 'inline'
+            to 'block' and see what the difference is (block and inline-block elements
+            have a 'height', inline elements do not.) */
+            display: inline-block;
+            width: 200px;
+            height: 200px;
+            background: black;
+            color: white;
+        }
     </style>
 </head>
 <body>
@@ -54,6 +79,11 @@
                 <p>This is a paragraph inside the article inside the section.</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam velit dicta laudantium explicabo suscipit iusto maiores totam recusandae, debitis nesciunt.</p>
             </article>
+        </section>
+        <section class="display-test">Hello</section>
+        <section class="display-test">World</section>
+        <section class="bg-image">
+            <h2>Check out this background image</h2>
         </section>
     </header>
     <main>
