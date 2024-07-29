@@ -64,14 +64,28 @@
             background: black;
             color: white;
         }
+        .border-section {
+            padding: 1em;
+        }
+        .box-shadow {
+            width: 800px;
+            height: 500px;
+            background-image: url("https://picsum.photos/800/500");
+            margin: 5em auto;
+            border-radius: 10px;
+            box-shadow: 0 0 15px black;
+        }
     </style>
 </head>
-<body>
+<body onload="window.scrollTo(0, 999999);">
     <header>
         <!-- Inline CSS (using `style` attribute) overrides everything else -->
         <h1 style="color: red;">Hello, sun!</h1>
         <h1 class="moon uppercase">Hello, moon!</h1>  <!-- Note multiple classes -->
+
         <p class="uppercase" id="lowercase">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, et.</p>
+    </header>
+    <main>
         <section style="border: 1px dashed blue;">
             This is a section.
             <article style="border: 1px dashed green;">
@@ -80,13 +94,17 @@
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam velit dicta laudantium explicabo suscipit iusto maiores totam recusandae, debitis nesciunt.</p>
             </article>
         </section>
+
         <section class="display-test">Hello</section>
+
         <section class="display-test">World</section>
+
         <section class="bg-image">
             <h2>Check out this background image</h2>
         </section>
-    </header>
-    <main>
+
+        <section class="box-shadow">
+        </section>
     </main>
 </body>
 </html>
