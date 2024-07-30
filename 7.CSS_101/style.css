@@ -59,6 +59,7 @@ p + p {
     height: 200px;
     background: black;
     color: white;
+    border: 1px dashed pink;
 }
 .border-section {
     padding: 1em;
