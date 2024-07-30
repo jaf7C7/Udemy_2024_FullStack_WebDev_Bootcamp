@@ -89,3 +89,30 @@ p + p {
     /* opacity: 0.5 */
     background-color: rgba(175, 175, 255, 0.5)
 }
+.annotation {
+    color: white;
+    font-style: italic;
+}
+.floating {
+    padding: 5em 2em;
+}
+.floating h3 {
+    margin-bottom: 1em;
+}
+.floating ul {
+    background: wheat;
+    border: 1px solid black;
+    border-radius: 5px;
+    list-style: none;
+    padding: 4em 2em;
+}
+.floating li {
+    background: orange;
+    border: 1px dotted red;
+    padding: 1em;
+    display: inline-block;
+}
+.floating li + li {
+    margin-left: 1em;
+    float: right;
+}
