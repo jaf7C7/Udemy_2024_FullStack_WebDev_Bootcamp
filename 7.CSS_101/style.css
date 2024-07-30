@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+/* This is *internal* CSS i.e. using `<style>` tags */
+h1 {  /* *element* selector */
+    color: green;
+}
+h1, p {  /* multiple selectors separated by commas */
+    background: pink;
+}
+.moon {  /* *class* selector */
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+/* The *id* selector is the most *specific* selector, as each ID should
+    * be unique. CSS does not require IDs to be unique, but JavaScript
+    * does (if you want `getElementById` to work properly).
+    *
+    * In CSS the more specific a selector is, the higher precedence its
+    * styles have. The ID selector is the most specific selector and so
+    * overrules all others.
+    */
+#lowercase {
+    text-transform: lowercase;
+}
+/* Select only p tags directly inside (children of) article tags */
+article > p {
+    background: lightgray;
+}
+/* Select only p tags directly preceded by (siblings of) other p tags */
+p + p {
+    background: lightblue;
+}
+.bg-image {
+    color: lightyellow;
+    padding: 5em 0;
+    font-size: 3em;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    /* Use linear-gradients to darken background image to ensure text is readable. */
+    background-image:
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url("https://images.unsplash.com/photo-1691157915037-68576ba139b1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover; /* Try playing with this setting in devtools */
+}
+.display-test p {
+    /* Try changing the 'display' property from 'inline-block' to 'inline'
+    to 'block' and see what the difference is (block and inline-block elements
+    have a 'height', inline elements do not.) */
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    background: black;
+    color: white;
+}
+.border-section {
+    padding: 1em;
+}
+.box-shadow {
+    display: flex;
+    justify-content: center;
+    padding: 5em 0;
+}
+.box-shadow img {
+    border-radius: 10px;
+    box-shadow: 0 0 15px black;
+}
