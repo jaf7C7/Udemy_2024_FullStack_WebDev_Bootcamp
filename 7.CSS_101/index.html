@@ -77,33 +77,31 @@
         }
     </style>
 </head>
-<body onload="window.scrollTo(0, 999999);">
+<body> <!-- onload="window.scrollTo(0, 999999);"> -->
     <header>
         <!-- Inline CSS (using `style` attribute) overrides everything else -->
         <h1 style="color: red;">Hello, sun!</h1>
         <h1 class="moon uppercase">Hello, moon!</h1>  <!-- Note multiple classes -->
-
         <p class="uppercase" id="lowercase">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, et.</p>
     </header>
     <main>
         <section style="border: 1px dashed blue;">
-            This is a section.
+            <!-- This is a section. -->
             <article style="border: 1px dashed green;">
-                This is an article inside the section.
-                <p>This is a paragraph inside the article inside the section.</p>
+                <!-- This is an article inside the section. -->
+                <p>This is a paragraph inside an article inside a section.</p>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam velit dicta laudantium explicabo suscipit iusto maiores totam recusandae, debitis nesciunt.</p>
             </article>
         </section>
 
-        <section class="display-test">Hello</section>
-
-        <section class="display-test">World</section>
+        <section class="display-test"><p>Hello</p><p>World</p></section>
 
         <section class="bg-image">
             <h2>Check out this background image</h2>
         </section>
 
         <section class="box-shadow">
+            <img src="https://picsum.photos/800/500">
         </section>
     </main>
 </body>
