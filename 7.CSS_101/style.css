@@ -72,3 +72,19 @@ p + p {
     border-radius: 10px;
     box-shadow: 0 0 15px black;
 }
+.transparency {
+    display: flex;
+    justify-content: center;
+    padding: 3em 0;
+    background-image: url("https://images.unsplash.com/photo-1681680603996-eb85ec3ceee9?q=80&w=1199&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: 30%;
+}
+.transparency p {
+    display: block;
+    width: max-content;
+    padding: 2em;
+    margin: auto;
+    color: white;
+    /* opacity: 0.5 */
+    background-color: rgba(175, 175, 255, 0.5)
+}
