@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "Proxima Nova";
+    src: url('fonts/proxima-nova/ProximaNova-Thin.woff') format('woff');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 1px solid red;
+}
+
+header {
+	padding: 2em;
+}
+
+body {
+    font-family: 'Proxima Nova';
+    font-size: 1.2em;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: black;
+}
+
+nav {
+    width: 90vw;
+    margin: 0 auto;
+    padding: 0 1em;
+    max-width: 63em;
+}
+
+.nav-list {
+    float: right;
+    width: 60%;
+    height: 4em;
+    text-align: right;
+}
+
+.nav-item {
+    display: inline-block;
+    padding: 1em 2em;
+    letter-spacing: 2px;
+}
+
+.nav-link {
+    text-transform: uppercase;
+}
