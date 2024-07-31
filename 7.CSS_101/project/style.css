@@ -1,5 +1,6 @@
 @font-face {
     font-family: "Proxima Nova";
+    font-weight: normal;
     src: url('fonts/proxima-nova/ProximaNova-Thin.woff') format('woff');
 }
 
@@ -7,7 +8,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 header {
@@ -29,16 +30,15 @@ a {
     color: black;
 }
 
-nav {
+nav,
+.hero-content {
     width: 90vw;
+    max-width: 61em;
     margin: 0 auto;
-    padding: 0 1em;
-    max-width: 63em;
 }
 
 .nav-list {
     float: right;
-    width: 60%;
     height: 4em;
     text-align: right;
 }
@@ -47,8 +47,39 @@ nav {
     display: inline-block;
     padding: 1em 2em;
     letter-spacing: 2px;
+    font-variant: ;
 }
 
 .nav-link {
     text-transform: uppercase;
+}
+
+.hero {
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('images/spacex-OHOU-5UVIYQ-unsplash.2e16d0ba.fill-1600x800.jpg');
+    background-position: center;
+    background-size: cover;
+    height: 740px;
+    color: white;
+    padding: 11em 0;
+}
+
+.hero-heading {
+    font-size: 3.2em;
+    width: 10em;
+}
+
+.hero-text {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+.btn {
+    background-color: white;
+    text-transform: uppercase;
+    font-size: 0.6em;
+    padding: 1em 2em;
+    margin: 0.5em 0;
 }
