@@ -17,6 +17,10 @@ h2 {
 	margin: 1em 0;
 }
 
+h3 {
+	padding: 2em;
+}
+
 .box-model {
 	max-width: 800px;
 	margin: 5em auto;
@@ -86,7 +90,6 @@ h2 {
 }
 
 .header {
-	padding: 4em;
 	/* position: fixed; */
 	top: 0;
 	left: 0;
@@ -103,4 +106,18 @@ h2 {
 	padding: 2em;
 	background: white;
 	box-shadow: 0 3px 3px -3px rgba(0, 0, 0, 0.2);
+}
+
+.overflow {
+	height: 30em;
+	width: 50%;
+	margin: 2em auto;
+	outline: 1px solid red;
+	overflow: auto;
+	padding: 1em;
+}
+
+.numbered-list {
+	list-style: numbered-list;
+	padding: 1em 2em;
 }
