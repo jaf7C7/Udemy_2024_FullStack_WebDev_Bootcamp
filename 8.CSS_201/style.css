@@ -9,7 +9,14 @@ body {
 	height: 1000vh;
 }
 
+section {
+	width: 75%;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
 h1 {
+	padding: 2em;
 	text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
 }
 
@@ -120,4 +127,37 @@ h3 {
 .numbered-list {
 	list-style: numbered-list;
 	padding: 1em 2em;
+}
+
+.box {
+	height: 25px;
+	width: 70%;
+	margin: 0 auto;
+	outline: 1px solid black;
+}
+
+.selectors .box:last-of-type {
+	margin-bottom: 1em;
+}
+
+.selectors h3 + .box {
+	background-color: pink;
+}
+
+.selectors .box ~ .box {
+	background-color: grey;
+}
+
+.selectors .box:nth-of-type(3) {
+	background-color: lightblue;
+}
+
+.selectors .box:hover {
+	position: relative;
+	left: 10px;
+	cursor: pointer;
+}
+
+.selectors .box:not(.box:last-of-type) {
+	border-radius: 50px;
 }
