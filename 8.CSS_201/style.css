@@ -170,3 +170,11 @@ h3 {
 .selectors .box:not(.box:last-of-type) {
 	border-radius: 50px;
 }
+
+.gradients h3 {
+	background: linear-gradient(45deg, grey, lightblue, pink);
+	padding: 2em;
+	margin: 2em;
+	color: white;
+	font-size: 2em;
+}
