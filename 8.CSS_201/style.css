@@ -249,3 +249,50 @@ h3 {
 	/* https://developer.mozilla.org/en-US/docs/Web/CSS/animation */
 	animation: .5s linear 0s infinite normal none running wobble;
 }
+
+.flexbox {
+	outline: 1px solid black;
+	margin-top: 3em;
+	display: flex;
+	flex-wrap: wrap;
+
+}
+
+.flex-header {
+	flex-basis: 100%;
+	flex-shrink: 0;
+	flex-grow: 1;
+	background-color: white;
+	text-align: center;
+	background-color: beige;
+	padding: 0.2em;
+}
+
+.flex-nav {
+	flex-basis: 20%;
+	flex-shrink: 1;
+	flex-grow: 0;
+	padding: 1em;
+	box-shadow: 3px 0 3px -3px rgba(0, 0, 0, 0.2);
+}
+
+.flex-nav ul {
+	list-style: none;
+}
+
+.flex-nav li {
+	text-align: center;
+	margin-bottom: 1em;
+}
+
+.flex-nav li:hover {
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+.flex-content {
+	padding: 2em;
+	flex-basis: 80%;
+	flex-shrink: 0;
+	flex-grow: 1;
+}
