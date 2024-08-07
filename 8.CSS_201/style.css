@@ -296,3 +296,31 @@ h3 {
 	flex-shrink: 0;
 	flex-grow: 1;
 }
+
+.grid {
+	margin-top: 4em;
+	border: 1px solid black;
+	display: grid;
+	gap: 0.5em;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+.grid > * {
+	box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1);
+	border-radius: 5px;
+	padding: 2em;
+	text-align: center;
+}
+
+.grid h4 {
+	margin-bottom: 1em;
+}
+
+.grid h3,
+.grid article:nth-of-type(4) {
+	grid-column: span 2;
+}
+
+.grid article:nth-of-type(2) {
+	grid-row: span 2;
+}
