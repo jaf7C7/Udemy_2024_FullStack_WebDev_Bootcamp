@@ -3,3 +3,4 @@ package.json
 package-lock.json
 .*.sw?
 nohup.out
+browser-sync.out
