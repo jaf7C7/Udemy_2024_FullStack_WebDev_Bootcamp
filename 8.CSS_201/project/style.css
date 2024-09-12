@@ -8,7 +8,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	/* border: 1px solid red; */
 }
 
 header {
@@ -30,24 +29,37 @@ a {
 	color: black;
 }
 
+img {
+	width: 100%;
+}
+
 nav,
 .hero-content {
-	width: 90vw;
+	width: 80vw;
 	max-width: 61em;
 	margin: 0 auto;
 }
 
+nav {
+	display: flex;
+}
+
+.nav-logo {
+	width: 25rem;
+	margin-right: 2em;
+}
+
 .nav-list {
-	float: right;
-	height: 4em;
-	text-align: right;
+	display: flex;
+	flex-basis: 100%;
+	justify-content: space-around;
 }
 
 .nav-item {
-	display: inline-block;
-	padding: 1em 2em;
-	letter-spacing: 2px;
-	font-variant: ;
+	display: flex;
+	flex-shrink: 0;
+	align-items: center;
+	justify-content: center;
 }
 
 .nav-link {
