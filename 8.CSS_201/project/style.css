@@ -1,7 +1,7 @@
 @font-face {
 	font-family: "Proxima Nova";
 	font-weight: normal;
-	src: url('fonts/proxima-nova/ProximaNova-Thin.woff') format('woff');
+	src: url('fonts/proxima-nova/ProximaNova-Regular.woff') format('woff');
 }
 
 * {
@@ -10,13 +10,10 @@
 	box-sizing: border-box;
 }
 
-header {
-	padding: 2em;
-}
-
 body {
 	font-family: 'Proxima Nova';
-	font-size: 1.2em;
+	font-size: 1.2rem;
+	font-weight: lighter;
 }
 
 ul {
@@ -33,20 +30,28 @@ img {
 	width: 100%;
 }
 
-nav,
-.hero-content {
-	width: 80vw;
-	max-width: 61em;
+.container {
+	width: 90vw;
+	max-width: 60rem;
 	margin: 0 auto;
 }
 
-nav {
+.btn {
+	text-transform: uppercase;
+	font-size: 1.2rem;
+	background-color: white;
+	letter-spacing: 0.1rem;
+	padding: 1rem 2rem;
+}
+
+.nav {
 	display: flex;
+	padding: 2rem 0;
 }
 
 .nav-logo {
 	width: 25rem;
-	margin-right: 2em;
+	margin-right: 2rem;
 }
 
 .nav-list {
@@ -74,24 +79,16 @@ nav {
 	background-size: cover;
 	height: 740px;
 	color: white;
-	padding: 11em 0;
+	display: flex;
+	align-items: center;
 }
 
 .hero-heading {
-	font-size: 3.2em;
-	width: 10em;
+	font-size: 5rem;
+	margin-bottom: 1.5rem;
 }
 
 .hero-text {
-	font-size: 1.5em;
-	font-weight: bold;
-	margin: 1em 0;
-}
-
-.btn {
-	background-color: white;
-	text-transform: uppercase;
-	font-size: 0.6em;
-	padding: 1em 2em;
-	margin: 0.5em 0;
+	font-size: 2rem;
+	margin-bottom: 4rem;
 }
