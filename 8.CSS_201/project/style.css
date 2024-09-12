@@ -4,6 +4,12 @@
 	src: url('fonts/proxima-nova/ProximaNova-Regular.woff') format('woff');
 }
 
+@font-face {
+	font-family: "Proxima Nova";
+	font-weight: bold;
+	src: url('fonts/proxima-nova/ProximaNova-Bold.woff') format('woff');
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -91,4 +97,48 @@ img {
 .hero-text {
 	font-size: 2rem;
 	margin-bottom: 4rem;
+}
+
+.services {
+	padding: 6rem 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.services-heading {
+	flex-basis: 100%;
+	text-align: center;
+	margin-bottom: 6rem;
+}
+
+.services-card {
+	border: 1px solid lightgrey;
+	flex-basis: 28rem;
+	text-align: center;
+	padding-bottom: 2rem;
+}
+
+.services-card-header {
+	font-weight: bold;
+	padding: 2rem 0;
+}
+
+.services-card-text {
+	padding: 0 3rem;
+	margin-bottom: 1.5rem;
+}
+
+.services-card-btn {
+	color: rgb(129, 78, 191);
+	font-size: 1rem;
+	position: relative;
+}
+
+.services-card-btn::after {
+	content: "›";
+	font-size: 1.5rem;
+	position: absolute;
+	right: 1rem;
+	top: 0.6rem;
 }
