@@ -223,3 +223,27 @@ img {
 	content: "—";
 	padding-right: 0.5rem;
 }
+
+.take-care {
+	background-color: #814EBF;
+	color: white;
+	padding: 5rem;
+}
+
+.take-care-header {
+	font-size: 2.8rem;
+	margin-bottom: 2rem;
+	width: 65%;
+}
+
+.take-care-text {
+	font-size: 1.5rem;
+	line-height: 2rem;
+	width: 65%;
+}
+
+.take-care-contact-btn {
+	float: right;
+	position: relative;
+	top: -9rem;
+}
