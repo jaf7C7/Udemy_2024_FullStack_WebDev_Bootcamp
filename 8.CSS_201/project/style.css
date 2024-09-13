@@ -142,3 +142,42 @@ img {
 	right: 1rem;
 	top: 0.6rem;
 }
+
+.details-card {
+	position: relative;
+	margin-bottom: 10rem;
+}
+
+.details-card-img {
+	display: block;
+	width: 40rem;
+}
+
+.details-card-content {
+	position: absolute;
+	bottom: -10%;
+	right: 5%;
+	background-image: url("./images/grey-pattern.b4f896f3f272.png");
+	padding: 3rem;
+	color: white;
+	width: 25rem;
+}
+
+.details-card:nth-of-type(2) {
+	display: flex;
+	flex-direction: row-reverse;
+}
+
+.details-card:nth-of-type(2) .details-card-content {
+	right: 50%;
+}
+
+.details-card-content-header {
+	font-size: 2rem;
+	padding-bottom: 2rem;
+}
+
+.details-card-content-text {
+	font-size: 1.5rem;
+	padding-bottom: 2rem;
+}
