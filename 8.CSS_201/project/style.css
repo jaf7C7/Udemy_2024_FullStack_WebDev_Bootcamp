@@ -83,7 +83,7 @@ img {
 		url('images/spacex-OHOU-5UVIYQ-unsplash.2e16d0ba.fill-1600x800.jpg');
 	background-position: center;
 	background-size: cover;
-	height: 740px;
+	padding: 10rem 0;
 	color: white;
 	display: flex;
 	align-items: center;
