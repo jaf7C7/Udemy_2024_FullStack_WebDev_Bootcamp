@@ -181,3 +181,20 @@ img {
 	font-size: 1.5rem;
 	padding-bottom: 2rem;
 }
+
+.skynet {
+	margin-bottom: 10rem;
+}
+
+.skynet-text {
+	font-size: 2rem;
+	text-align: center;
+}
+
+.skynet-contact-btn {
+	display: block;
+	width: max-content;
+	margin: 2rem auto;
+	background-color: #6e3da9;
+	color: white;
+}
