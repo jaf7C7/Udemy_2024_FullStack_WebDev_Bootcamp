@@ -198,3 +198,28 @@ img {
 	background-color: #6e3da9;
 	color: white;
 }
+
+.testimonial {
+	margin-bottom: 10rem;
+}
+
+.testimonial-quote {
+	font-weight: bold;
+	text-align: center;
+	font-style: italic;
+	font-size: 2rem;
+	width: 50%;
+	margin: 0 auto;
+}
+
+.testimonial-attrib {
+	text-transform: uppercase;
+	width: max-content;
+	margin: 1rem auto;
+	text-align: center;
+}
+
+.testimonial-attrib::before {
+	content: "—";
+	padding-right: 0.5rem;
+}
