@@ -247,3 +247,48 @@ img {
 	position: relative;
 	top: -9rem;
 }
+
+.footer {
+	background-color: black;
+	color: white;
+	font-size: 1rem;
+	padding: 4rem 2rem;
+}
+
+.footer .container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.footer-section {
+	flex-basis: 20%;
+}
+
+.footer-section-title {
+	text-transform: uppercase;
+	font-size: 0.8rem;
+	color: grey;
+	margin-bottom: 1rem;
+	letter-spacing: 0.2rem;
+}
+
+.footer-section-link {
+	color: white;
+	display: block;
+	margin-bottom: 1rem;
+	font-size: 1.2rem;
+}
+
+.footer-contact-text {
+	margin-bottom: 1rem;
+	line-height: 1.5rem;
+}
+
+.footer-social-link {
+	margin: 0.5rem;
+}
+
+.footer-copyright {
+	color: grey;
+	margin: 0.5rem;
+}
