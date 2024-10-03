@@ -1,0 +1,90 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+a {
+	color: black;
+}
+
+ul {
+	list-style: none;
+}
+
+.header {
+	margin-bottom: 10rem;
+	display: flex;
+	flex-wrap: wrap;
+	box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.2);
+	padding: 1rem;
+	position: relative;
+}
+
+.nav-menu {
+	flex-basis: 100%;
+}
+
+.menu-btn {
+	margin-left: auto;
+	opacity: 0.5;
+	cursor: pointer;
+	flex-basis: 25px;
+}
+
+.menu-icon {
+	height: 2px;
+	width: 25px;
+	background-color: black;
+	position: absolute;
+	right: 16px;
+	top: 37px;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+	content: "";
+	height: 2px;
+	width: 25px;
+	background-color: black;
+	position: absolute;
+	right: 0;
+}
+
+.menu-icon::before {
+	top: -6px;
+}
+
+.menu-icon::after {
+	top: 6px;
+}
+
+.nav-menu {
+	display: none;
+}
+
+.menu-btn:checked ~ .nav-menu {
+	display: block;
+}
+
+.container {
+	position: relative;
+	/* Setting the height directly as a percentage does not work. Vertical
+	padding is used to fill the element and effectively set the height *as a
+	percentage of the width*
+	56.25% => 16:9 width to height ratio (9 / 15 * 100 = 56.25) */
+	padding-top: 56.25%;
+}
+
+.container iframe {
+	/* The container creates the space for the iframe and keeps the aspect ratio,
+	and the iframe is just stretched over the container. */
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+}
+
