@@ -82,4 +82,18 @@ img {
 
 .menu-btn:checked ~ .nav-menu {
 	display: block;
+	margin-top: 1rem;
+}
+
+.nav-item {
+	text-align: center;
+	padding: 0.5rem;
+}
+
+.logo {
+	font-size: 1.4rem;
+}
+
+.header {
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
 }
