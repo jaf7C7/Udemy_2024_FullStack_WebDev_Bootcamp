@@ -1,0 +1,30 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.header {
+	box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2);
+	padding: 2rem;
+}
+
+main {
+	display: flex;
+	height: 100vh;
+}
+
+.aside {
+	box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+	padding: 2rem;
+}
+
+.content {
+	padding: 2rem;
+}
+
+@media (max-width: 450px) {
+	.aside {
+		display: none;
+	}
+}
