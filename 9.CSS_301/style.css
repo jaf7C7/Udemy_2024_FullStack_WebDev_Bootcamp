@@ -37,6 +37,7 @@ img {
 	display: flex;
 	flex-wrap: wrap;
 	position: relative;
+	align-items: center;
 }
 
 .nav-menu {
@@ -46,8 +47,10 @@ img {
 
 .menu-btn {
 	margin-left: auto;
-	width: 50px;
 	cursor: pointer;
+	opacity: 0;
+	flex-basis: 3rem;
+	height: 3rem;
 }
 
 .menu-icon {
@@ -55,8 +58,8 @@ img {
 	width: 20px;
 	background-color: black;
 	position: absolute;
-	right: 1.45rem;
-	top: 2rem;
+	right: 1.40rem;
+	top: 2.5rem;
 	cursor: pointer;
 }
 
