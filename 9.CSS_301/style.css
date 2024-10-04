@@ -32,3 +32,51 @@ img {
 	height: 100%;
 	width: 100%;
 }
+
+.nav {
+	display: flex;
+	flex-wrap: wrap;
+	position: relative;
+}
+
+.nav-menu {
+	flex-basis: 100%;
+	display: none;
+}
+
+.menu-btn {
+	margin-left: auto;
+	width: 50px;
+	cursor: pointer;
+}
+
+.menu-icon {
+	height: 2px;
+	width: 20px;
+	background-color: black;
+	position: absolute;
+	right: 1.45rem;
+	top: 2rem;
+	cursor: pointer;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+	content: "";
+	width: 100%;
+	height: inherit;
+	background-color: inherit;
+	position: absolute;
+}
+
+.menu-icon::before {
+	top: -5px;
+}
+
+.menu-icon::after {
+	top: 5px;
+}
+
+.menu-btn:checked ~ .nav-menu {
+	display: block;
+}
