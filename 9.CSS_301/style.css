@@ -110,3 +110,20 @@ ul {
 .article-text {
 	margin-bottom: 1rem;
 }
+
+@media (min-width: 650px) {
+	.menu-icon,
+	.menu-btn {
+		display: none;
+	}
+
+	.nav-menu {
+		display: flex;
+		flex-basis: auto;
+		margin-left: auto;
+	}
+
+	.nav-item + .nav-item {
+		margin-left: 1rem;
+	}
+}
