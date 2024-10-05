@@ -1,13 +1,12 @@
 /* Conditional Statements */
 
-console.log('Conditional Statements:')
-
 const value = 10;
 
 if (value == 10) {
-	console.log('value is 10');
-else if (value == 20) {
-	console.log('value is 20');
+	valueEqualsTen = true;
+} else if (value == 20)  // Braces are option for *one-line* statements.
+	valueEqualsTwenty = true;
 else {
-	console.log('Something went wrong!');
+	somethingWentWrong = true;
+	console.error('Unknown value');
 }

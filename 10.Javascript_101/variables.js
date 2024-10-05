@@ -1,7 +1,5 @@
 /* Variable Declarations and Scope */
 
-console.log('Variable Declarations and Scope:');
-
 // The var statement declares function-scoped or globally-scoped variables,
 // optionally initializing each to a value.
 var a = 10;
@@ -65,5 +63,5 @@ function baz() {
 }
 
 if (c != 10) {
-	console.log(`c is ${c}: Something went wrong!`);
+	console.error(`c is ${c}: Something went wrong!`);
 }

@@ -1,7 +1,5 @@
 /* Data Types and Data Structures */
 
-console.log('Data Types and Data Structures:');
-
 const string = 'hi';
 const number = 3;
 const float = 3.14;
@@ -20,6 +18,6 @@ const object = {
 	}
 }
 
-console.log(array[0]);  // 'One'
-console.log(_function());  // "I'm a function"
-console.log(object['name']);  // 'Hugh'
+array[0]  // 'One'
+_function()  // "I'm a function"
+object['name']  // 'Hugh'
