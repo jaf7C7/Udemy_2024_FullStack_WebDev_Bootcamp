@@ -1,6 +1,6 @@
 /* Variable Declarations and Scope */
 
-console.log('Variable Declarations');
+console.log('Variable Declarations and Scope:');
 
 // The var statement declares function-scoped or globally-scoped variables,
 // optionally initializing each to a value.
