@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Javascript 201</title>
+		<style>
+			body > *,
+			pre {
+				max-width: 800px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			kbd,
+			samp,
+			pre {
+				white-space: pre-wrap; /* Wrap pre lines */
+				font-size: 1rem;
+				background-color: #efefef;
+				border-radius: 5px;
+			}
+
+			em {
+				font-weight: bold;
+			}
+
+			kbd,
+			samp {
+				padding: 0 0.2rem;
+			}
+
+			pre {
+				padding: 0.5rem;
+			}
+
+			blockquote {
+				font-style: italic;
+				background-color: lightgoldenrodyellow;
+				position: relative;
+				padding: 0.5rem;
+				border-radius: 5px;
+			}
+
+			blockquote::before,
+			blockquote::after {
+				content: '"';
+				position: absolute;
+				font-size: 3em;
+			}
+
+			blockquote::after {
+				bottom: -2.5rem;
+				right: -0.5rem;
+			}
+
+			blockquote::before {
+				top: -1.4rem;
+				left: -1rem;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>JavaScript 201</h1>
+		<hr>
+		<h2>Callback Functions</h2>
+		<p>JavaScript is an <em>event-driven language</em>, meaning that it listens for certain events, and executes corresponding <em>callback functions</em> to perform certain behaviours.</p>
+		<p>Open the console (<kbd>Ctrl+Shift+K</kbd>) to see the output of the following snippet. Note that <samp>'Done'</samp> is displayed before <samp>'Executing callback...'</samp>, because the callback is executed <em>asynchronously</em>.</p>
+		<pre><code class="language-javascript">console.log('Waiting 2500ms...');
+setTimeout(function() {
+	console.log('Executing callback...');
+}, 2500);
+console.log('Done');</code></pre>
+		<p>Try clicking this button: <button id="btn">Click me.</button></p>
+		<p>The code that causes the alert is shown below:</p>
+		<pre><code class="language-javascript">document.getElementById('btn').addEventListener('click', () => {
+	// This is the callback function
+	alert('You clicked the button');
+});</code></pre>
+		<script>
+			console.log('Waiting 2500ms...');
+			setTimeout(function() {
+				console.log('Executing callback...');
+			}, 2500);
+			console.log('Done');
+
+			document.getElementById('btn').addEventListener('click', () => {
+				// This is the callback function
+				alert('You clicked the button');
+			});
+
+			let count = 0;
+			const repeatedTask = setInterval(function() {
+				count++;
+				console.log('Doing something every 5000ms...');
+				if (count == 3) {
+					console.log('This is the last one');
+					// `setInterval` returns before the callback is executed, so
+					// we can reference `repeatedTask` within the callback
+					// without throwing an error.
+					unsetInterval(repeatedTask);
+				}
+			}, 5000);
+		</script>
+	</body>
+</html>
