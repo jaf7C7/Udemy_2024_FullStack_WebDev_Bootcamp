@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Javascript 201</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			body > *,
+			pre {
+				max-width: 800px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			kbd,
+			samp,
+			pre,
+			code {
+				white-space: pre-wrap; /* Wrap pre lines */
+				font-size: 1rem;
+				background-color: #efefef;
+				border-radius: 5px;
+			}
+
+			em {
+				font-weight: bold;
+			}
+
+			kbd,
+			samp,
+			code {
+				padding: 0 0.2rem;
+			}
+
+			pre > code {
+				padding: 0;
+			}
+
+			pre {
+				padding: 0.5rem;
+			}
+
+			blockquote {
+				font-style: italic;
+				background-color: lightgoldenrodyellow;
+				position: relative;
+				padding: 0.5rem;
+				border-radius: 5px;
+			}
+
+			blockquote::before,
+			blockquote::after {
+				content: '"';
+				position: absolute;
+				font-size: 3em;
+			}
+
+			blockquote::after {
+				bottom: -2.5rem;
+				right: -0.5rem;
+			}
+
+			blockquote::before {
+				top: -1.4rem;
+				left: -1rem;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>JavaScript 201</h1>
+		<hr>
+		<h2>Strict Mode</h2>
+		<p><em>strict mode</em> in JavaScript can be enabled by adding <code>"use strict";</code> to your code.</p>
+		<p>Strict mode will be much less tolerant and throw errors if you write ambiguous statements. For example:</p>
+		<pre><code class="language-javascript">"use strict";
+const x = 1;  // no error
+let y = 1;  // no error
+var z = 1;  // no error
+a = 1;  // 'ReferenceError: a is not defined'</code></pre>
+		<p>Without strict mode enabled, <code>a</code> would be declared as a global variable as if <code>var</code> had been used.</p>
+		<p>
+			From <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Strict_mode">MDN:</a>
+			<blockquote>
+				Strict mode changes some previously-accepted mistakes into errors. JavaScript was designed to be easy for novice developers, and sometimes it gives operations which should be errors non-error semantics. Sometimes this fixes the immediate problem, but sometimes this creates worse problems in the future. Strict mode treats these mistakes as errors so that they're discovered and promptly fixed.
+			</blockquote>
+		</p>
+	</body>
+</html>
