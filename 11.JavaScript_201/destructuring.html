@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Destructuring - JavaScript 201</title>
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			body > *,
+			pre {
+				max-width: 800px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			kbd,
+			samp,
+			pre,
+			code {
+				white-space: pre-wrap; /* Wrap pre lines */
+				font-size: 1rem;
+				background-color: #efefef;
+				border-radius: 5px;
+			}
+
+			em {
+				font-weight: bold;
+			}
+
+			kbd,
+			samp,
+			code {
+				padding: 0 0.2rem;
+			}
+
+			pre > code {
+				padding: 0;
+			}
+
+			pre {
+				padding: 0.5rem;
+			}
+
+			blockquote {
+				font-style: italic;
+				background-color: lightgoldenrodyellow;
+				position: relative;
+				padding: 0.5rem;
+				border-radius: 5px;
+			}
+
+			blockquote::before,
+			blockquote::after {
+				content: '"';
+				position: absolute;
+				font-size: 3em;
+			}
+
+			blockquote::after {
+				bottom: -2.5rem;
+				right: -0.5rem;
+			}
+
+			blockquote::before {
+				top: -1.3rem;
+				left: -0.8rem;
+			}
+		</style>
+	</head>
+	<body>
+		<h1>JavaScript 201</h1>
+		<hr>
+		<h2>Destructuring</h2>
+		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">MDN:</a></p>
+		<blockquote>The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.</blockquote>
+		<h3>Binding and assignment</h3>
+		<blockquote>For both object and array destructuring, there are two kinds of destructuring patterns: <em>binding pattern</em> and <em>assignment pattern</em>, with slightly different syntaxes.</blockquote>
+		<h4>Binding</h4>
+		<p>In the binding pattern, values are bound to variables in a declaration. For example:</p>
+		<pre><code>let a, b, rest;
+[a, b] = [10, 20];
+
+console.log(a);
+// Expected output: 10
+
+console.log(b);
+// Expected output: 20
+
+[a, b, ...rest] = [10, 20, 30, 40, 50];
+
+console.log(rest);
+// Expected output: Array [30, 40, 50]</code></pre>
+		<p>Object example:</p>
+		<pre><code>const obj = { a: 1, b: 2 };
+const { a, b } = obj;
+// is equivalent to:
+// const a = obj.a;
+// const b = obj.b;</code></pre>
+	<p><em>Note</em>: The above example would not work if the <code>a</code>, <code>b</code> variable names did not match the keys of <code>obj</code>.</p>
+		<p>A more complex example:</p>
+		<pre><code>const obj = { a: 1, b: { c: 2 } };
+const {
+	a,
+	b: { c: d },
+} = obj;
+
+console.log(a);
+// Expected output: 1
+
+console.log(d);
+// Expected output: 2</code></pre>
+	<h4>Assignment</h4>
+	<p>In assignment, values are assigned to either previously declared variables, or properties of other objects. For example:</p>
+	<pre><code>const numbers = [];
+const obj = { a: 1, b: 2 };
+({ a: numbers[0], b: numbers[1] } = obj);
+
+console.log(numbers);
+// Expected output: [ 1, 2 ]
+// The properties `a` and `b` are assigned to properties of `numbers`</code></pre>
+	<h3>Default Value</h3>
+	<blockquote>Each destructured property can have a <em>default value</em>. The default value is used when the property is not present, or has value <code>undefined</code>. It is not used if the property has value <code>null</code>.</blockquote>
+	<pre><code>const [a = 1] = []; // a is 1
+const { b = 2 } = { b: undefined }; // b is 2
+const { c = 2 } = { c: null }; // c is null</code></pre>
+	</body>
+</html>
