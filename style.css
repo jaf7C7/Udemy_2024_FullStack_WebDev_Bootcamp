@@ -1,0 +1,53 @@
+body > *,
+pre {
+	max-width: 800px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+kbd,
+samp,
+pre {
+	white-space: pre-wrap; /* Wrap pre lines */
+	font-size: 1rem;
+	background-color: #efefef;
+	border-radius: 5px;
+}
+
+em {
+	font-weight: bold;
+}
+
+kbd,
+samp {
+	padding: 0 0.2rem;
+}
+
+pre {
+	padding: 0.5rem;
+}
+
+blockquote {
+	font-style: italic;
+	background-color: lightgoldenrodyellow;
+	position: relative;
+	padding: 0.5rem;
+	border-radius: 5px;
+}
+
+blockquote::before,
+blockquote::after {
+	content: '"';
+	position: absolute;
+	font-size: 3em;
+}
+
+blockquote::after {
+	bottom: -2.5rem;
+	right: -0.5rem;
+}
+
+blockquote::before {
+	top: -1.4rem;
+	left: -1rem;
+}
