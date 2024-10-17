@@ -1,21 +1,37 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Destructuring - JavaScript 201</title>
-		<link rel="stylesheet" href="../style.css">
+		<link rel="stylesheet" href="../style.css" />
 	</head>
 	<body>
 		<h1>JavaScript 201</h1>
-		<hr>
+		<hr />
 		<h2>Destructuring</h2>
-		<p><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment">MDN:</a></p>
-		<blockquote>The destructuring assignment syntax is a JavaScript expression that makes it possible to unpack values from arrays, or properties from objects, into distinct variables.</blockquote>
+		<p>
+			<a
+				href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment"
+				>MDN:</a
+			>
+		</p>
+		<blockquote>
+			The destructuring assignment syntax is a JavaScript expression that makes
+			it possible to unpack values from arrays, or properties from objects, into
+			distinct variables.
+		</blockquote>
 		<h3>Binding and assignment</h3>
-		<blockquote>For both object and array destructuring, there are two kinds of destructuring patterns: <em>binding pattern</em> and <em>assignment pattern</em>, with slightly different syntaxes.</blockquote>
+		<blockquote>
+			For both object and array destructuring, there are two kinds of
+			destructuring patterns: <em>binding pattern</em> and
+			<em>assignment pattern</em>, with slightly different syntaxes.
+		</blockquote>
 		<h4>Binding</h4>
-		<p>In the binding pattern, values are bound to variables in a declaration. For example:</p>
+		<p>
+			In the binding pattern, values are bound to variables in a declaration.
+			For example:
+		</p>
 		<pre><code>let a, b, rest;
 [a, b] = [10, 20];
 
@@ -35,7 +51,10 @@ const { a, b } = obj;
 // is equivalent to:
 // const a = obj.a;
 // const b = obj.b;</code></pre>
-	<p><em>Note</em>: The above example would not work if the <code>a</code>, <code>b</code> variable names did not match the keys of <code>obj</code>.</p>
+		<p class="note">
+			<em>Note</em>: The above example would not work if the <code>a</code>,
+			<code>b</code> variable names did not match the keys of <code>obj</code>.
+		</p>
 		<p>A more complex example:</p>
 		<pre><code>const obj = { a: 1, b: { c: 2 } };
 const {
@@ -48,18 +67,31 @@ console.log(a);
 
 console.log(d);
 // Expected output: 2</code></pre>
-	<h4>Assignment</h4>
-	<p>In assignment, values are assigned to either previously declared variables, or properties of other objects. For example:</p>
-	<pre><code>const numbers = [];
+		<h4>Assignment</h4>
+		<p>
+			In assignment, values are assigned to either previously declared
+			variables, or properties of other objects. For example:
+		</p>
+		<pre><code>const numbers = [];
 const obj = { a: 1, b: 2 };
 ({ a: numbers[0], b: numbers[1] } = obj);
 
 console.log(numbers);
 // Expected output: [ 1, 2 ]
 // The properties `a` and `b` are assigned to properties of `numbers`</code></pre>
-	<h3>Default Value</h3>
-	<blockquote>Each destructured property can have a <em>default value</em>. The default value is used when the property is not present, or has value <code>undefined</code>. It is not used if the property has value <code>null</code>.</blockquote>
-	<pre><code>const [a = 1] = []; // a is 1
+		<p class="note">
+			<em>Note</em>: The parentheses <code>( ... )</code> around the assignment
+			statement are required when using object literal destructuring assignment
+			without a declaration.
+		</p>
+		<h3>Default Value</h3>
+		<blockquote>
+			Each destructured property can have a <em>default value</em>. The default
+			value is used when the property is not present, or has value
+			<code>undefined</code>. It is not used if the property has value
+			<code>null</code>.
+		</blockquote>
+		<pre><code>const [a = 1] = []; // a is 1
 const { b = 2 } = { b: undefined }; // b is 2
 const { c = 2 } = { c: null }; // c is null</code></pre>
 	</body>
