@@ -14,12 +14,14 @@
 		</p>
 		<p>Sounds <em>AMAZING</em>! Let's begin...</p>
 		<script>
-			const number = Math.floor(Math.random() * 10);
-			let guess;
-			do {
-				guess = Number(prompt("Guess a number between 1 and 10:"));
-			} while (guess !== number);
-			alert("You got it!");
+			window.addEventListener("load", () => {
+				const number = Math.floor(Math.random() * 10);
+				let guess;
+				do {
+					guess = Number(prompt("Guess a number between 1 and 10:"));
+				} while (guess !== number);
+				alert("You got it!");
+			});
 		</script>
 	</body>
 </html>
