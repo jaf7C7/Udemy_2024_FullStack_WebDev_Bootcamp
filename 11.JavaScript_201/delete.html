@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Deletion - JavaScript 201</title>
+		<link rel="stylesheet" href="../style.css" />
+	</head>
+	<body>
+		<h1>JavaScript 201</h1>
+		<hr />
+		<h2>Deletion</h2>
+		<p>
+			The <code>delete</code> keyword can be used to delete properties but
+			<em>not</em> variables themselves.
+		</p>
+		<pre><code>"use strict";
+
+const obj = { foo: 10, bar: 20 };
+
+delete obj;
+// The above command should throw an error. Without strict mode this would
+// silently fail.
+
+delete obj['foo'];
+
+console.log(obj);
+// Expected output: { bar: 20 }
+</code></pre>
+		<p class="note">
+			<em>Note</em>: <code>"use strict"</code> does not work properly in the
+			browser console.
+		</p>
+	</body>
+</html>
