@@ -1,13 +1,13 @@
 @font-face {
 	font-family: "Proxima Nova";
 	font-weight: normal;
-	src: url('fonts/proxima-nova/ProximaNova-Regular.woff') format('woff');
+	src: url("fonts/proxima-nova/ProximaNova-Regular.woff") format("woff");
 }
 
 @font-face {
 	font-family: "Proxima Nova";
 	font-weight: bold;
-	src: url('fonts/proxima-nova/ProximaNova-Bold.woff') format('woff');
+	src: url("fonts/proxima-nova/ProximaNova-Bold.woff") format("woff");
 }
 
 * {
@@ -17,7 +17,7 @@
 }
 
 body {
-	font-family: 'Proxima Nova';
+	font-family: "Proxima Nova";
 	font-size: 1.2rem;
 	font-weight: lighter;
 }
@@ -78,9 +78,8 @@ img {
 }
 
 .hero {
-	background:
-		linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-		url('images/spacex-OHOU-5UVIYQ-unsplash.2e16d0ba.fill-1600x800.jpg');
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+		url("images/spacex-OHOU-5UVIYQ-unsplash.2e16d0ba.fill-1600x800.jpg");
 	background-position: center;
 	background-size: cover;
 	padding: 10rem 0;
@@ -225,7 +224,7 @@ img {
 }
 
 .take-care {
-	background-color: #814EBF;
+	background-color: #814ebf;
 	color: white;
 	padding: 5rem;
 }

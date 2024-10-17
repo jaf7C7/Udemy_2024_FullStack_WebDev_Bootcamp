@@ -1,22 +1,26 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    /* outline: 1px solid red; */
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* outline: 1px solid red; */
 }
 /* This is *internal* CSS i.e. using `<style>` tags */
-h1 {  /* *element* selector */
-    color: green;
+h1 {
+	/* *element* selector */
+	color: green;
 }
-h1, p {  /* multiple selectors separated by commas */
-    background: pink;
+h1,
+p {
+	/* multiple selectors separated by commas */
+	background: pink;
 }
-.moon {  /* *class* selector */
-    border: 1px solid black;
-    border-radius: 5px;
+.moon {
+	/* *class* selector */
+	border: 1px solid black;
+	border-radius: 5px;
 }
 .uppercase {
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
 /* The *id* selector is the most *specific* selector, as each ID should
     * be unique. CSS does not require IDs to be unique, but JavaScript
@@ -27,92 +31,91 @@ h1, p {  /* multiple selectors separated by commas */
     * overrules all others.
     */
 #lowercase {
-    text-transform: lowercase;
+	text-transform: lowercase;
 }
 /* Select only p tags directly inside (children of) article tags */
 article > p {
-    background: lightgray;
+	background: lightgray;
 }
 /* Select only p tags directly preceded by (siblings of) other p tags */
 p + p {
-    background: lightblue;
+	background: lightblue;
 }
 .bg-image {
-    color: lightyellow;
-    padding: 5em 0;
-    font-size: 3em;
-    font-weight: bold;
-    text-align: center;
-    text-transform: uppercase;
-    /* Use linear-gradients to darken background image to ensure text is readable. */
-    background-image:
-        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-        url("https://images.unsplash.com/photo-1691157915037-68576ba139b1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-size: cover; /* Try playing with this setting in devtools */
+	color: lightyellow;
+	padding: 5em 0;
+	font-size: 3em;
+	font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+	/* Use linear-gradients to darken background image to ensure text is readable. */
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+		url("https://images.unsplash.com/photo-1691157915037-68576ba139b1?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+	background-size: cover; /* Try playing with this setting in devtools */
 }
 .display-test p {
-    /* Try changing the 'display' property from 'inline-block' to 'inline'
+	/* Try changing the 'display' property from 'inline-block' to 'inline'
     to 'block' and see what the difference is (block and inline-block elements
     have a 'height', inline elements do not.) */
-    display: inline-block;
-    width: 200px;
-    height: 200px;
-    background: black;
-    color: white;
-    border: 1px dashed pink;
+	display: inline-block;
+	width: 200px;
+	height: 200px;
+	background: black;
+	color: white;
+	border: 1px dashed pink;
 }
 .border-section {
-    padding: 1em;
+	padding: 1em;
 }
 .box-shadow {
-    display: flex;
-    justify-content: center;
-    padding: 5em 0;
+	display: flex;
+	justify-content: center;
+	padding: 5em 0;
 }
 .box-shadow img {
-    border-radius: 10px;
-    box-shadow: 0 0 15px black;
+	border-radius: 10px;
+	box-shadow: 0 0 15px black;
 }
 .transparency {
-    display: flex;
-    justify-content: center;
-    padding: 3em 0;
-    background-image: url("https://images.unsplash.com/photo-1681680603996-eb85ec3ceee9?q=80&w=1199&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-    background-size: 30%;
+	display: flex;
+	justify-content: center;
+	padding: 3em 0;
+	background-image: url("https://images.unsplash.com/photo-1681680603996-eb85ec3ceee9?q=80&w=1199&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+	background-size: 30%;
 }
 .transparency p {
-    display: block;
-    width: max-content;
-    padding: 2em;
-    margin: auto;
-    color: white;
-    /* opacity: 0.5 */
-    background-color: rgba(175, 175, 255, 0.5)
+	display: block;
+	width: max-content;
+	padding: 2em;
+	margin: auto;
+	color: white;
+	/* opacity: 0.5 */
+	background-color: rgba(175, 175, 255, 0.5);
 }
 .annotation {
-    color: white;
-    font-style: italic;
+	color: white;
+	font-style: italic;
 }
 .floating {
-    padding: 5em 2em;
+	padding: 5em 2em;
 }
 .floating h3 {
-    margin-bottom: 1em;
+	margin-bottom: 1em;
 }
 .floating ul {
-    background: wheat;
-    border: 1px solid black;
-    border-radius: 5px;
-    list-style: none;
-    padding: 4em 2em;
+	background: wheat;
+	border: 1px solid black;
+	border-radius: 5px;
+	list-style: none;
+	padding: 4em 2em;
 }
 .floating li {
-    background: orange;
-    border: 1px dotted red;
-    padding: 1em;
-    display: inline-block;
+	background: orange;
+	border: 1px dotted red;
+	padding: 1em;
+	display: inline-block;
 }
 .floating li + li {
-    margin-left: 1em;
-    float: right;
+	margin-left: 1em;
+	float: right;
 }

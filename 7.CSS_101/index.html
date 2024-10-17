@@ -1,51 +1,62 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body> <!-- onload="window.scrollTo(0, 999999);"> -->
-    <header>
-        <!-- Inline CSS (using `style` attribute) overrides everything else -->
-        <h1 style="color: red;">Hello, sun!</h1>
-        <h1 class="moon uppercase">Hello, moon!</h1>  <!-- Note multiple classes -->
-        <p class="uppercase" id="lowercase">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, et.</p>
-    </header>
-    <main>
-        <section style="border: 1px dashed blue;">
-            <!-- This is a section. -->
-            <article style="border: 1px dashed green;">
-                <!-- This is an article inside the section. -->
-                <p>This is a paragraph inside an article inside a section.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam velit dicta laudantium explicabo suscipit iusto maiores totam recusandae, debitis nesciunt.</p>
-            </article>
-        </section>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<!-- onload="window.scrollTo(0, 999999);"> -->
+		<header>
+			<!-- Inline CSS (using `style` attribute) overrides everything else -->
+			<h1 style="color: red">Hello, sun!</h1>
+			<h1 class="moon uppercase">Hello, moon!</h1>
+			<!-- Note multiple classes -->
+			<p class="uppercase" id="lowercase">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, et.
+			</p>
+		</header>
+		<main>
+			<section style="border: 1px dashed blue">
+				<!-- This is a section. -->
+				<article style="border: 1px dashed green">
+					<!-- This is an article inside the section. -->
+					<p>This is a paragraph inside an article inside a section.</p>
+					<p>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+						velit dicta laudantium explicabo suscipit iusto maiores totam
+						recusandae, debitis nesciunt.
+					</p>
+				</article>
+			</section>
 
-        <section class="display-test"><p>Hello</p><p>World</p></section>
+			<section class="display-test">
+				<p>Hello</p>
+				<p>World</p>
+			</section>
 
-        <section class="bg-image">
-            <h2>Check out this background image</h2>
-        </section>
+			<section class="bg-image">
+				<h2>Check out this background image</h2>
+			</section>
 
-        <section class="box-shadow">
-            <img src="https://picsum.photos/800/500">
-        </section>
+			<section class="box-shadow">
+				<img src="https://picsum.photos/800/500" />
+			</section>
 
-        <section class="transparency">
-            <p>Make this paragraph transparent.</p>
-        </section>
+			<section class="transparency">
+				<p>Make this paragraph transparent.</p>
+			</section>
 
-        <section class="floating">
-            <h3><i>"Floating"</i> elements</h3>
-            <ul>
-                <li class="float-item">1 <sup class="annotation">Unfloated</sup></li>
-                <li class="float-item">2 <sup class="annotation">Floated</sup></li>
-                <li class="float-item">3 <sup class="annotation">Floated</sup></li>
-                <li class="float-item">4 <sup class="annotation">Floated</sup></li>
-            </ul>
-        </section>
-    </main>
-</body>
+			<section class="floating">
+				<h3><i>"Floating"</i> elements</h3>
+				<ul>
+					<li class="float-item">1 <sup class="annotation">Unfloated</sup></li>
+					<li class="float-item">2 <sup class="annotation">Floated</sup></li>
+					<li class="float-item">3 <sup class="annotation">Floated</sup></li>
+					<li class="float-item">4 <sup class="annotation">Floated</sup></li>
+				</ul>
+			</section>
+		</main>
+	</body>
 </html>

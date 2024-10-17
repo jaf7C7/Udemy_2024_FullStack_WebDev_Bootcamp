@@ -47,7 +47,6 @@ if (b != 10) {
 	console.error(`b is ${b}: Something went wrong!`);
 }
 
-
 // The const declaration declares block-scoped local variables. The value of a
 // constant can't be changed through reassignment using the assignment
 // operator, but if a constant is an object, its properties can be added,

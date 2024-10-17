@@ -12,7 +12,12 @@ body {
 	font-style: normal;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	font-family: "Kanit", sans-serif;
 	font-weight: 600;
 	font-style: normal;
@@ -27,7 +32,7 @@ section {
 h1 {
 	padding: 2em;
 	text-shadow: 3px 3px 2px rgba(0, 0, 0, 0.2);
-	animation: bounce-top .9s linear both
+	animation: bounce-top 0.9s linear both;
 }
 
 h2 {
@@ -56,7 +61,7 @@ h3 {
 }
 
 .margin::before {
-	content: 'margin';
+	content: "margin";
 	position: absolute;
 	top: 3%;
 	left: 2%;
@@ -69,7 +74,7 @@ h3 {
 }
 
 .border::before {
-	content: 'border';
+	content: "border";
 	position: absolute;
 	top: 12%;
 	left: 9%;
@@ -84,7 +89,7 @@ h3 {
 }
 
 .padding::before {
-	content: 'padding';
+	content: "padding";
 	position: absolute;
 	top: 23%;
 	left: 17%;
@@ -99,7 +104,7 @@ h3 {
 }
 
 .content::before {
-	content: 'content';
+	content: "content";
 	position: absolute;
 	top: 43%;
 	left: 25%;
@@ -187,43 +192,46 @@ h3 {
   Twitter: @xsgames_
 ---------------------------------------------- */
 
-.bounce-top{
-	animation: bounce-top .9s linear both
+.bounce-top {
+	animation: bounce-top 0.9s linear both;
 }
 
 @keyframes bounce-top {
 	0% {
 		transform: translateY(-45px);
-		animation-timing-function:ease-in;
-		opacity:1
+		animation-timing-function: ease-in;
+		opacity: 1;
 	}
 	24% {
-		opacity: 1
+		opacity: 1;
 	}
 	40% {
 		transform: translateY(-24px);
-		animation-timing-function:ease-in
+		animation-timing-function: ease-in;
 	}
 	65% {
 		transform: translateY(-12px);
-		animation-timing-function:ease-in
+		animation-timing-function: ease-in;
 	}
 	82% {
 		transform: translateY(-6px);
-		animation-timing-function:ease-in
+		animation-timing-function: ease-in;
 	}
 	93% {
 		transform: translateY(-4px);
-		animation-timing-function:ease-in
+		animation-timing-function: ease-in;
 	}
-	25%, 55%, 75%, 87% {
+	25%,
+	55%,
+	75%,
+	87% {
 		transform: translateY(0);
-		animation-timing-function: ease-out
+		animation-timing-function: ease-out;
 	}
 	100% {
 		transform: translateY(0);
 		animation-timing-function: ease-out;
-		opacity:1
+		opacity: 1;
 	}
 }
 
@@ -247,7 +255,7 @@ h3 {
 
 .transformations img {
 	/* https://developer.mozilla.org/en-US/docs/Web/CSS/animation */
-	animation: .5s linear 0s infinite normal none running wobble;
+	animation: 0.5s linear 0s infinite normal none running wobble;
 }
 
 .flexbox {
@@ -255,7 +263,6 @@ h3 {
 	margin-top: 3em;
 	display: flex;
 	flex-wrap: wrap;
-
 }
 
 .flex-header {

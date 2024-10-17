@@ -1,62 +1,67 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HTML 201</title>
-    <!-- This link adds an icon to the browser tab -->
-    <link rel="shortcut icon" href="./images/html.png" type="image/png">
-    <style>
-      /* Make the table cells visible */
-      table * {
-        border: 1px solid black;
-      }
-      /* This is how we select elements with the 'class="cell33"' attribute */
-      .cell33 {
-        background-color: pink;
-      }
-      /* This is an *id* selector. Make sure every id is *unique*! */
-      #cell11 {
-        font-weight: bold;
-        text-align: center;
-        text-transform: uppercase;
-      }
-    </style>
-  </head>
-  <body>
-    <h1 id="top">Welcome to HTML 201</h1>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>HTML 201</title>
+		<!-- This link adds an icon to the browser tab -->
+		<link rel="shortcut icon" href="./images/html.png" type="image/png" />
+		<style>
+			/* Make the table cells visible */
+			table * {
+				border: 1px solid black;
+			}
+			/* This is how we select elements with the 'class="cell33"' attribute */
+			.cell33 {
+				background-color: pink;
+			}
+			/* This is an *id* selector. Make sure every id is *unique*! */
+			#cell11 {
+				font-weight: bold;
+				text-align: center;
+				text-transform: uppercase;
+			}
+		</style>
+	</head>
+	<body>
+		<h1 id="top">Welcome to HTML 201</h1>
 
-    <h2>Internal Links</h2>
-    <a href="#bottom">Scroll to bottom of page</a>
-    <br>
+		<h2>Internal Links</h2>
+		<a href="#bottom">Scroll to bottom of page</a>
+		<br />
 
-    <h2>Tables</h2>
-    <!-- border and width attributes can be used for rudimentary styling -->
-    <table border="5", width="100%">
-      <tbody> <!-- this tag is not strictly necessary -->
-        <tr> <!-- table row -->
-          <!-- table header -->
-          <th width="100%" colspan=3>This is the table header</th>
-        </tr>
-        <tr id="cell11">
-          <td colspan=3>Cell 1.1 (spans 3 columns)</td> <!-- table data -->
-        </tr>
-        <tr>
-          <!-- widths can also be applied to table cells -->
-          <td rowspan=2 width="20%">Cell 2.1 (spans 2 rows)</td>
-          <td colspan=2>Cell 2.2 (spans 2 columns)</td>
-        </tr>
-        <tr>
-          <!-- This is *inline* CSS, which has the highest *specificity* of any CSS, but it is *bad practice* -->
-          <td style="padding: 1em; color: white; background-color: black">Cell 3.2</td>
-          <!-- The *class* attribute allows us to select this element in CSS -->
-          <td class="cell33">Cell 3.3</td>
-        </tr>
-      </tbody>
-    </table>
+		<h2>Tables</h2>
+		<!-- border and width attributes can be used for rudimentary styling -->
+		<table border="5" , width="100%">
+			<tbody>
+				<!-- this tag is not strictly necessary -->
+				<tr>
+					<!-- table row -->
+					<!-- table header -->
+					<th width="100%" colspan="3">This is the table header</th>
+				</tr>
+				<tr id="cell11">
+					<td colspan="3">Cell 1.1 (spans 3 columns)</td>
+					<!-- table data -->
+				</tr>
+				<tr>
+					<!-- widths can also be applied to table cells -->
+					<td rowspan="2" width="20%">Cell 2.1 (spans 2 rows)</td>
+					<td colspan="2">Cell 2.2 (spans 2 columns)</td>
+				</tr>
+				<tr>
+					<!-- This is *inline* CSS, which has the highest *specificity* of any CSS, but it is *bad practice* -->
+					<td style="padding: 1em; color: white; background-color: black">
+						Cell 3.2
+					</td>
+					<!-- The *class* attribute allows us to select this element in CSS -->
+					<td class="cell33">Cell 3.3</td>
+				</tr>
+			</tbody>
+		</table>
 
-    <h3>Format Code</h3>
-    <pre>
+		<h3>Format Code</h3>
+		<pre>
        This is preformatted text wrapped in a <i>&lt;pre&gt;</i> tag. 
        Whitespace matters inside <i>&lt;pre&gt;</i> tags, and they are used for writing
        code in HTML, to make sure code is readable.
@@ -68,8 +73,10 @@
        You can use other tags (e.g. <i>&lt;i&gt;</i>, <i>&lt;b&gt;</i>, etc.) to further format the text inside.
     </pre>
 
-    <p> You can also use the <i>&lt;code&gt;</i> tag to put code in your HTML:
-    <pre><code>
+		<p>
+			You can also use the <i>&lt;code&gt;</i> tag to put code in your HTML:
+		</p>
+		<pre><code>
 &copy;2024 JAF
 #
 # This is code wrapped in *both* <i>&lt;pre&gt;</i> and <i>&lt;code&gt;</i> tags.
@@ -135,173 +142,325 @@ __set_theme ()
 }
     </code></pre>
 
-    <p>
-      <span style="text-decoration: underline;">This text is underlined using the <i>&lt;span&gt;</i> tag with a <i>style="text-decoration: underline"</i> attribute</span>. This is the preferred way to underline text in html.
-    </p>
-    <p>
-      Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt commodi corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium possimus, sit obcaecati? Officia.
-    </p>
-    <div id="bottom"><a href="#top">Back to top</a></div>
+		<p>
+			<span style="text-decoration: underline"
+				>This text is underlined using the <i>&lt;span&gt;</i> tag with a
+				<i>style="text-decoration: underline"</i> attribute</span
+			>. This is the preferred way to underline text in html.
+		</p>
+		<p>
+			Ducimus natus amet quidem dolores necessitatibus repudiandae nisi deserunt
+			commodi corrupti velit, omnis, voluptatem sapiente veritatis enim
+			accusantium possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
 
-    <h3>Forms</h3>
-    <p>Submit this form and see where your browser navigates to</p>
-    <!-- Submitting the form with 'action="GET"' sends the form data in the query string of the target URL. This is **not** a secure way to send information! -->
-    <form method="GET" action="somepage.html">
-      <p>
-        See <a href="https://html.spec.whatwg.org/dev/forms.html">the HTML standard</a> for info on writing forms.
-      <p>
-      <p>
-        <label>Email</label>
-        <input name="email" type="email">
-      </p>
-      <p>
-        <label>Password</label>
-        <input required name="password" type="password">
-      </p>
-      <p>
-        <label>Are you human?</label>
-        <input type="checkbox">
-      </p>
-      <p>
-        <label>What emails would you like to receive?</label>
-        <select name="selection">
-          <option value="spam">Spam</option>
-          <option value="marketing" selected>Marketing</option>
-          <option value="advertising">Advertising</option>
-          <option value="death_threats" disabled>Death threats</option>
-        </select>
-      <p>
-        <textarea cols="80" rows="24" placeholder="This is a placeholder. Don't leave whitespace inside your textarea!"></textarea>
-      </p>
-      <button type="submit">Submit</button>
-    </form>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
 
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<p>
+			Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus natus
+			amet quidem dolores necessitatibus repudiandae nisi deserunt commodi
+			corrupti velit, omnis, voluptatem sapiente veritatis enim accusantium
+			possimus, sit obcaecati? Officia.
+		</p>
+		<div id="bottom"><a href="#top">Back to top</a></div>
+
+		<h3>Forms</h3>
+		<p>Submit this form and see where your browser navigates to</p>
+		<!-- Submitting the form with 'action="GET"' sends the form data in the query string of the target URL. This is **not** a secure way to send information! -->
+		<form method="GET" action="somepage.html">
+			<p>
+				See
+				<a href="https://html.spec.whatwg.org/dev/forms.html"
+					>the HTML standard</a
+				>
+				for info on writing forms.
+			</p>
+
+			<p></p>
+			<p>
+				<label>Email</label>
+				<input name="email" type="email" />
+			</p>
+			<p>
+				<label>Password</label>
+				<input required name="password" type="password" />
+			</p>
+			<p>
+				<label>Are you human?</label>
+				<input type="checkbox" />
+			</p>
+			<p>
+				<label>What emails would you like to receive?</label>
+				<select name="selection">
+					<option value="spam">Spam</option>
+					<option value="marketing" selected>Marketing</option>
+					<option value="advertising">Advertising</option>
+					<option value="death_threats" disabled>Death threats</option>
+				</select>
+			</p>
+
+			<p>
+				<textarea
+					cols="80"
+					rows="24"
+					placeholder="This is a placeholder. Don't leave whitespace inside your textarea!"
+				></textarea>
+			</p>
+			<button type="submit">Submit</button>
+		</form>
 
 		<h3>Embeds</h3>
 
-		<p>You can use the <i>&lt;iframe&gt;</i> element to embed other sites or media directly in your page.</p>
+		<p>
+			You can use the <i>&lt;iframe&gt;</i> element to embed other sites or
+			media directly in your page.
+		</p>
 
 		<h4>Wikipedia</h4>
-		<iframe src="https://wikipedia.org" frameborder="0" width=600 height=350></iframe>
+		<iframe
+			src="https://wikipedia.org"
+			frameborder="0"
+			width="600"
+			height="350"
+		></iframe>
 
 		<h4>YouTube</h4>
-		<iframe width="560" height="315" src="https://www.youtube.com/embed/y2xmRL0pDSo?si=Sx8GsXw8sey5NCJN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  </body>
+		<iframe
+			width="560"
+			height="315"
+			src="https://www.youtube.com/embed/y2xmRL0pDSo?si=Sx8GsXw8sey5NCJN"
+			title="YouTube video player"
+			frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+			referrerpolicy="strict-origin-when-cross-origin"
+			allowfullscreen
+		></iframe>
+	</body>
 </html>

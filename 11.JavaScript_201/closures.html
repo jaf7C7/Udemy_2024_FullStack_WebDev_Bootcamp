@@ -1,35 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>JavaScript 201: Loading And Unloading Events</title>
+		<link rel="stylesheet" href="../style.css" />
+	</head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>JavaScript 201: Loading And Unloading Events</title>
-	<link rel="stylesheet" href="../style.css">
-</head>
+	<body>
+		<h1>JavaScript 201</h1>
+		<hr />
+		<h2>Closures</h2>
+		<p>
+			From
+			<a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures"
+				>MDN</a
+			>:
+		</p>
+		<blockquote>
+			A closure is the combination of a function bundled together (enclosed)
+			with references to its surrounding state (the lexical environment). In
+			other words, a closure gives a function access to its outer scope. In
+			JavaScript, closures are created every time a function is created, at
+			function creation time.
+			<br />
+			[...]
+			<br />
+			A closure is the combination of a function and the lexical environment
+			within which that function was declared.
+		</blockquote>
 
-<body>
-	<h1>JavaScript 201</h1>
-	<hr>
-	<h2>Closures</h2>
-	<p>
-		From <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Closures">MDN</a>:
-	</p>
-	<blockquote>
-		A closure is the combination of a function bundled together (enclosed) with references to its surrounding state
-		(the lexical environment). In other words, a closure gives a function access to its outer scope. In JavaScript,
-		closures are created every time a function is created, at function creation time.
-		<br>
-		[...]
-		<br>
-		A closure is the combination of a function and the lexical environment within which that function was declared.
-	</blockquote>
-
-	<p>
-		For example:
-	</p>
-	<code>
-<pre>
+		<p>For example:</p>
+		<code>
+			<pre>
 function init() {
 	var name = "Mozilla"; // name is a local variable created by init
 	function displayName() {
@@ -39,16 +42,18 @@ function init() {
 	displayName();
 }
 init();
-</pre>
-	</code>
-	<blockquote>
-		Closures are useful because they let you associate data (the lexical environment) with a function that operates
-		on that data. This has obvious parallels to object-oriented programming, where objects allow you to associate
-		data (the object's properties) with one or more methods.
-		<br>
-		<br>
-		Consequently, you can use a closure anywhere that you might normally use an object with only a single method.
-	</blockquote>
-</body>
-
+</pre
+			>
+		</code>
+		<blockquote>
+			Closures are useful because they let you associate data (the lexical
+			environment) with a function that operates on that data. This has obvious
+			parallels to object-oriented programming, where objects allow you to
+			associate data (the object's properties) with one or more methods.
+			<br />
+			<br />
+			Consequently, you can use a closure anywhere that you might normally use
+			an object with only a single method.
+		</blockquote>
+	</body>
 </html>
