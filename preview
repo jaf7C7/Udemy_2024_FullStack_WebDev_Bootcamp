@@ -1,0 +1,2 @@
+#!/bin/sh
+exec gnome-terminal --tab -- browser-sync start -sw --no-inject-changes --index "$1"
