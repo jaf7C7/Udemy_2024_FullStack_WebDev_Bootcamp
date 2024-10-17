@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h1>Mini-Project</h1>
+		<p>Your task is to create a <em>guess the random number</em> game.</p>
+		<p>
+			The player must choose numbers from one to 10 until they guess the correct
+			one.
+		</p>
+		<p>Sounds <em>AMAZING</em>! Let's begin...</p>
+		<script>
+			const number = Math.floor(Math.random() * 10);
+			let guess;
+			do {
+				guess = Number(prompt("Guess a number between 1 and 10:"));
+			} while (guess !== number);
+			alert("You got it!");
+		</script>
+	</body>
+</html>
