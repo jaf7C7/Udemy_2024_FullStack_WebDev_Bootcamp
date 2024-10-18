@@ -1,0 +1,4 @@
+# https://editorconfig.org/
+[*.{html,css,js}]
+indent_style = tab
+indent_size = 2
