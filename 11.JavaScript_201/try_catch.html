@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Try Catch Statements - JavaScipt 201</title>
+		<link rel="stylesheet" href="./style.css" />
+	</head>
+	<body>
+		<h1>JavaScipt 201</h1>
+		<hr />
+		<h2>Try Catch Statements</h2>
+		<!--
+		<p>Content goes <em>here</em>.</p>
+		<blockquote>Blockquote</blockquote>
+		<pre><code>function codeBlock() {
+	console.log("I'm a code block");
+}</code></pre>
+		-->
+		<p>
+			From
+			<a
+				href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch#description"
+				>MDN</a
+			>:
+		</p>
+		<!--
+			TODO:
+			* Add section on `throw` https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/throw
+			* Add section on `try...catch`
+		-->
+		<script>
+			// XXX Without the try-catch block errors will stop execution.
+			// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Control_flow_and_error_handling
+			try {
+				undefinedFunction();
+			} catch (error) {
+				console.warn(error);
+			} finally {
+				console.log("This is always executed");
+			}
+			// Any object can be thrown and caught.
+			try {
+				throw "This is a string";
+			} catch (foo) {
+				if (!(foo instanceof Error)) {
+					console.error(foo);
+				}
+			}
+		</script>
+	</body>
+</html>
